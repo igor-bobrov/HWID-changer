@@ -1,0 +1,42 @@
+TARGET = Some("x86_64-pc-windows-msvc")
+OPT_LEVEL = Some("3")
+TARGET = Some("x86_64-pc-windows-msvc")
+HOST = Some("x86_64-pc-windows-msvc")
+TARGET = Some("x86_64-pc-windows-msvc")
+TARGET = Some("x86_64-pc-windows-msvc")
+HOST = Some("x86_64-pc-windows-msvc")
+CC_x86_64-pc-windows-msvc = None
+CC_x86_64_pc_windows_msvc = None
+HOST_CC = None
+CC = None
+TARGET = Some("x86_64-pc-windows-msvc")
+HOST = Some("x86_64-pc-windows-msvc")
+CFLAGS_x86_64-pc-windows-msvc = None
+CFLAGS_x86_64_pc_windows_msvc = None
+HOST_CFLAGS = None
+CFLAGS = None
+DEBUG = Some("false")
+running: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\cl.exe" "/nologo" "/MD" "/O2" "/W4" "/FoC:\\Users\\ibobr\\OneDrive\\Documents\\rust\\HwIp\\hw\\target\\release\\build\\runas-221f1ef2628cbf72\\out\\runas-windows.o" "/c" "runas-windows.c"
+runas-windows.c
+runas-windows.c(12): warning C4133: =: несовместимые типы - из "unsigned short [6]" в "LPCSTR"
+runas-windows.c(13): warning C4047: =: "LPCSTR" отличается по уровням косвенного обращения от "LPCTSTR *"
+runas-windows.c(14): warning C4047: =: "LPCSTR" отличается по уровням косвенного обращения от "LPCTSTR *"
+runas-windows.c(17): warning C4133: функция: несовместимые типы - из "SHELLEXECUTEINFO *" в "SHELLEXECUTEINFOW *"
+runas-windows.c(18): warning C4245: return: преобразование "int" в "DWORD", несоответствие типов со знаком и без
+runas-windows.c(24): warning C4245: return: преобразование "int" в "DWORD", несоответствие типов со знаком и без
+exit code: 0
+TARGET = Some("x86_64-pc-windows-msvc")
+running: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\lib.exe" "/OUT:C:\\Users\\ibobr\\OneDrive\\Documents\\rust\\HwIp\\hw\\target\\release\\build\\runas-221f1ef2628cbf72\\out\\librunas.a" "/nologo" "C:\\Users\\ibobr\\OneDrive\\Documents\\rust\\HwIp\\hw\\target\\release\\build\\runas-221f1ef2628cbf72\\out\\runas-windows.o"
+exit code: 0
+TARGET = Some("x86_64-pc-windows-msvc")
+HOST = Some("x86_64-pc-windows-msvc")
+TARGET = Some("x86_64-pc-windows-msvc")
+TARGET = Some("x86_64-pc-windows-msvc")
+HOST = Some("x86_64-pc-windows-msvc")
+CC_x86_64-pc-windows-msvc = None
+CC_x86_64_pc_windows_msvc = None
+HOST_CC = None
+CC = None
+cargo:rustc-link-lib=static=runas
+cargo:rustc-link-search=native=C:\Users\ibobr\OneDrive\Documents\rust\HwIp\hw\target\release\build\runas-221f1ef2628cbf72\out
+cargo:rustc-link-lib=ole32

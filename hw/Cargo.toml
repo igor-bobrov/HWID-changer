@@ -1,0 +1,11 @@
+[package]
+name = "hw"
+version = "0.1.0"
+edition = "2021"
+privileges = true
+
+[dependencies]
+
+rand = "0.8.4"
+winreg = "0.6.2"
+runas = "0.1"
